@@ -1,0 +1,23 @@
+.box{
+    position: absolute;
+    top: 50px;
+    left: 35%;
+    width: 350px;
+    height: 500px;
+    border: transparent;
+
+}
+
+.submitbutton1{
+    position: absolute;
+    top: 300px;
+    left: 0%;
+    width: 350px;
+    height: 500px;
+    border: transparent;
+}
+
+
+
+
+
