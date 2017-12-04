@@ -5,9 +5,9 @@ $(document).ready(() => {
     const orderList = $("#order-list");
 
 
-    SDK.Order.findMyOrders((err, data) => {
+    SDK.History.getMyOrders((err, data) => {
         console.log('getAllOrder from history.js');
-        console.log(err, data);
+
         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
         console.log(orders);
         //console.log(1, food);
