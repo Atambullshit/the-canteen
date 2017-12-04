@@ -39,7 +39,7 @@ $(document).ready(() => {
         //SDK.Encryption.encryptDecrypt();
         $(".order-button").click(function () {
             const orderId = $(this).data("order-id");
-            const orders = history.find((orders) => orders.orderId === orderId);
+            const orders = Order.find((orders) => orders.orderId === orderId);
             console.log();
             SDK.History.orderProduct(orderId, orders.productName, orders.productPrice, (err) => {
                 if (err && err.xhr.status === 401) {
@@ -49,7 +49,7 @@ $(document).ready(() => {
                     console.log("Something went wrong");
                     window.alert("Was not able to delete the event - Try again")
                 } else {
-                    window.location.href = "History.html";
+                    window.location.href = "Orders.html";
                 }
 
 

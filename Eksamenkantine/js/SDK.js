@@ -58,36 +58,36 @@ const SDK = {
         }
     },
 
-    History: {
-        getAllOrders: (cb) => {
-            SDK.request({
-                method: "GET",
-                url: "history", //+ SDK.User.current().username,
-                headers: {}
-            }, cb)
-
-
-        },
-        orderProduct: (orderId, id, productName, productPrice, cb) => {
-
-            SDK.request({
-                data: {
-                    orderId: orderId,
-                    id: id,
-                    productName: productName,
-                    productPrice: productPrice
-                },
-
-                method: "POST",
-                url: "users/order" + orderId,
-
-                headers: {authorization: SDK.Storage.load("token")}
-            }, (err, data) => {
-
-                cb(null, data);
-            });
-        },
-    },
+    // History: {
+    //     getMyOrders: (cb) => {
+    //         SDK.request({
+    //             method: "GET",
+    //             url: "history",
+    //             headers: {}
+    //         }, cb)
+    //
+    //
+    //     },
+    //     orderProducts: (orderId, id, productName, productPrice, cb) => {
+    //
+    //         SDK.request({
+    //             data: {
+    //                 orderId: orderId,
+    //                 id: id,
+    //                 productName: productName,
+    //                 productPrice: productPrice
+    //             },
+    //
+    //             method: "POST",
+    //             url: "users/order" + orderId,
+    //
+    //             headers: {authorization: SDK.Storage.load("token")}
+    //         }, (err, data) => {
+    //
+    //             cb(null, data);
+    //         });
+    //     },
+    // },
 
 
     //     create: (data, cb) => {
@@ -104,25 +104,27 @@ const SDK = {
     //         SDK.request({method: "GET", url: "/authors"}, cb);
     //     }
     // },
-    // Order: {
-    //     create: (data, cb) => {
-    //         SDK.request({
-    //             method: "POST",
-    //             url: "/orders",
-    //             data: data,
-    //             headers: {authorization: SDK.Storage.load("tokenId")}
-    //         }, cb);
-    //     },
-    //     findMine: (cb) => {
-    //         SDK.request({
-    //             method: "GET",
-    //             url: "/orders/" + SDK.User.current().id + "/allorders",
-    //             headers: {
-    //                 authorization: SDK.Storage.load("tokenId")
-    //             }
-    //         }, cb);
-    //     }
-    // },
+    Order: {
+        orderProduct: (data, cb) => {
+            SDK.request({
+                method: "POST",
+                url: "users/orders",
+                data: data,
+                headers: {authorization: SDK.Storage.load("token")}
+            }, cb);
+        },
+
+         findMyOrders: (cb) => {
+             SDK.request({
+                 method: "GET",
+                 url: "orders/" + SDK.User.current(),
+                 headers: {
+                     authorization: SDK.Storage.load("tokenId")
+                 }
+             }, cb);
+         }
+    },
+
     User: {
         findAll: (cb) => {
             SDK.request({method: "GET", url: "/users/"}, cb);

@@ -1,10 +1,11 @@
+
 $(document).ready(() => {
 
     //SDK.User.loadNav();
     const orderList = $("#order-list");
 
 
-    SDK.History.getAllOrders((err, data) => {
+    SDK.Order.findMyOrders((err, data) => {
         console.log('getAllOrder from history.js');
         console.log(err, data);
         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
