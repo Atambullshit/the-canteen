@@ -59,7 +59,7 @@ const SDK = {
     },
 
     History: {
-        getMyOrders: (cb) => {
+        FindMyOrders: (cb) => {
             SDK.request({
                 method: "GET",
                 url: "history",
@@ -79,7 +79,7 @@ const SDK = {
                 },
 
                 method: "POST",
-                url: "users/order" + orderId,
+                url: "users/orders" + orderId,
 
                 headers: {authorization: SDK.Storage.load("token")}
             }, (err, data) => {

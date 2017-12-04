@@ -39,9 +39,10 @@ $(document).ready(() => {
         //SDK.Encryption.encryptDecrypt();
         $(".order-button").click(function () {
             const orderId = $(this).data("order-id");
-            const orders = History.find((orders) => orders.orderId === orderId);
-            console.log();
-            SDK.History.orderProduct(orderId, orders.productName, orders.productPrice, (err) => {
+            const orders = SDK.History.FindMyOrders((orders) => //orders.orderId === orderId);
+            console.log(orders));
+            SDK.History.orderProduct(orderId, orders.productName, order.productPrice, (err, data, cb) => {
+                console.log(data, cb)
                 if (err && err.xhr.status === 401) {
                     $(".margin-bottom").addClass("Error")
                 }

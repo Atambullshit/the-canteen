@@ -5,7 +5,7 @@ $(document).ready(() => {
     const orderList = $("#order-list");
 
 
-    SDK.History.getMyOrders((err, data) => {
+    SDK.History.FindMyOrders((err, data) => {
         console.log('getAllOrder from history.js');
 
         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
@@ -16,7 +16,7 @@ $(document).ready(() => {
             orderList.append(
                 "<tr>" +
                 "<td>" + order.id +  "</td>" +
-                "<td>" + order.items + "</td>" +
+                "<td>" + order.productPrice + "</td>" +
                 "<td>" + order.productName + "</td>" +
                 "<td>" + order.dateTime + "</td>" +
 
