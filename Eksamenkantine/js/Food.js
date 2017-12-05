@@ -34,23 +34,47 @@ $(document).ready(() => {
             foodList.append(tr);
 
 
+
         });*/
 
         //SDK.Encryption.encryptDecrypt();
+        // $(".order-button").click(function () {
+        //     //const orderId = $(this).data("order-id");
+        //     const orderId = $(this).data("order-id");
+        //     SDK.History.FindMyOrders((error, data) => {
+        //         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(orderId));
+        //         console.log(error, SDK.Encryption.encryptDecrypt(data))
+        //     });//orders = SDK.History.FindMyOrders((orders) => //orders.orderId === orderId);
+        //     //console.log(orders));
+        //     SDK.History.orderProduct(orderId, orders.productName, order.productPrice, (err, data, cb) => {
+        //         console.log(data, cb)
+        //         if (err && err.xhr.status === 401) {
+        //             $(".margin-bottom").addClass("Error")
+        //         }
+        //
+        //
+        //
+        //     });
+        //
+        //
+        // });
+
+        const orderId = $(this).data("order-id");
         $(".order-button").click(function () {
-            const orderId = $(this).data("order-id");
-            const orders = SDK.History.FindMyOrders((orders) => //orders.orderId === orderId);
-            console.log(orders));
-            SDK.History.orderProduct(orderId, orders.productName, order.productPrice, (err, data, cb) => {
-                console.log(data, cb)
-                if (err && err.xhr.status === 401) {
-                    $(".margin-bottom").addClass("Error")
+
+        SDK.History.FindMyOrders((error, data) => {
+            const orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
+            let currentOrder = null;
+            orders.forEach((order) => {
+                if (orderId === order.id) {
+                    currentOrder = order;
                 }
-
-
-
-            });
-
+            })
+            console.log(currentOrder);
+            SDK.History.orderProduct(orderId, orders.productName, orders.productPrice, (err, data) => {
+                console.log(err, data);
+            })
+        });
 
         });
 

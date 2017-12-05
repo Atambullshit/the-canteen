@@ -79,7 +79,7 @@ const SDK = {
                 },
 
                 method: "POST",
-                url: "users/orders" + orderId,
+                url: "users/orders/" ,
 
                 headers: {authorization: SDK.Storage.load("token")}
             }, (err, data) => {
