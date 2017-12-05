@@ -17,7 +17,7 @@ $(document).ready(() => {
                     "<td>"+food.id+"</td>" +
                     "<td>"+food.productName+"</td>" +
                     "<td>"+food.productPrice+"</td>" +
-                    "<td><button class=\"btn btn-success order-button\" data-order-id=\"${History.orderId}\">Order</button></td>"+
+                    "<td><button class=\"btn btn-success order-button\" data-order-id=\"${order.id}\">Order</button></td>"+
                 "</tr>"
             )
         })
@@ -66,13 +66,13 @@ $(document).ready(() => {
             const orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
             let currentOrder = null;
             orders.forEach((order) => {
-                if (orderId === order.id) {
+                if (order.id === orderId) {
                     currentOrder = order;
                 }
             })
             console.log(currentOrder);
-            SDK.History.orderProduct(orderId, orders.productName, orders.productPrice, (err, data) => {
-                console.log(err, data);
+            SDK.History.orderProduct(orderId, (err, data) => {
+                console.log(data);
             })
         });
 

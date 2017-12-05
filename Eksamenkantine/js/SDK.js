@@ -63,42 +63,44 @@ const SDK = {
             SDK.request({
                 method: "GET",
                 url: "history",
-                headers: {}
+                headers: {
+                    authorization: SDK.Storage.load("token")
+                }
             }, cb)
 
 
         },
-        orderProduct: (orderId, id, productName, productPrice, cb) => {
-
-            SDK.request({
-                data: {
-                    orderId: orderId,
-                    id: id,
-                    productName: productName,
-                    productPrice: productPrice
-                },
-
-                method: "POST",
-                url: "users/orders/" ,
-
-                headers: {authorization: SDK.Storage.load("token")}
-            }, (err, data) => {
-
-                cb(null, data);
-            });
-        },
-    },
-
-
-    //     create: (data, cb) => {
+    //     orderProduct: (orderId, id, productName, productPrice, cb) => {
+    //
     //         SDK.request({
+    //             data: {
+    //                 orderId: orderId,
+    //                 id: id,
+    //                 productName: productName,
+    //                 productPrice: productPrice
+    //             },
+    //
     //             method: "POST",
-    //             url: "/books",
-    //             data: data,
-    //             headers: {authorization: SDK.Storage.load("tokenId")}
-    //         }, cb);
-    //     }
+    //             url: "users/orders/16",
+    //
+    //             headers: {authorization: SDK.Storage.load("token")}
+    //         }, (err, data) => {
+    //
+    //             cb(null, data);
+    //         });
+    //     },
     // },
+
+
+        orderProduct: (data, cb) => {
+            SDK.request({
+                method: "POST",
+                url: "users/orders/16",
+                data: data.id,
+                headers: {authorization: SDK.Storage.load("token")}
+            }, cb);
+        }
+    },
     // Author: {
     //     findAll: (cb) => {
     //         SDK.request({method: "GET", url: "/authors"}, cb);
