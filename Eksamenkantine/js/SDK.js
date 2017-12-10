@@ -70,33 +70,33 @@ const SDK = {
 
 
         },
-    //     orderProduct: (orderId, id, productName, productPrice, cb) => {
-    //
-    //         SDK.request({
-    //             data: {
-    //                 orderId: orderId,
-    //                 id: id,
-    //                 productName: productName,
-    //                 productPrice: productPrice
-    //             },
-    //
-    //             method: "POST",
-    //             url: "users/orders/16",
-    //
-    //             headers: {authorization: SDK.Storage.load("token")}
-    //         }, (err, data) => {
-    //
-    //             cb(null, data);
-    //         });
-    //     },
-    // },
+        //     orderProduct: (orderId, id, productName, productPrice, cb) => {
+        //
+        //         SDK.request({
+        //             data: {
+        //                 orderId: orderId,
+        //                 id: id,
+        //                 productName: productName,
+        //                 productPrice: productPrice
+        //             },
+        //
+        //             method: "POST",
+        //             url: "users/orders/16",
+        //
+        //             headers: {authorization: SDK.Storage.load("token")}
+        //         }, (err, data) => {
+        //
+        //             cb(null, data);
+        //         });
+        //     },
+        // },
 
 
-        orderProduct: (data, cb) => {
+        orderProduct: (id, data, cb) => {
             SDK.request({
                 method: "POST",
-                url: "users/orders/16",
-                data: data.id,
+                url: "users/orders/" + 45,
+                data: data,
                 headers: {authorization: SDK.Storage.load("token")}
             }, cb);
         }
