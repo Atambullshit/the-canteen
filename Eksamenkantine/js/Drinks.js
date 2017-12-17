@@ -21,22 +21,7 @@ $(document).ready(() => {
                 "</tr>"
             )
         })
-        /* $.each(food, function (i, cb) {
 
-             var tr = '<tr>';
-             tr += '<td>' + food[i].id +'</td>';
-             tr += '<td>' + food[i].name +'</td>';
-             tr += '<td>' + food[i].price +'</td>';
-
-
-            tr += '</tr>';
-            i + 1
-             foodList.append(tr);
-
-
-         });*/
-
-        //SDK.Encryption.encryptDecrypt();
 
 
 

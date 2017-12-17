@@ -22,43 +22,7 @@ $(document).ready(() => {
                 `
             )
         })
-       /* $.each(food, function (i, cb) {
 
-            var tr = '<tr>';
-            tr += '<td>' + food[i].id +'</td>';
-            tr += '<td>' + food[i].name +'</td>';
-            tr += '<td>' + food[i].price +'</td>';
-
-
-           tr += '</tr>';
-           i + 1
-            foodList.append(tr);
-
-
-
-        });*/
-
-        //SDK.Encryption.encryptDecrypt();
-        // $(".order-button").click(function () {
-        //     //const orderId = $(this).data("order-id");
-        //     const orderId = $(this).data("order-id");
-        //     SDK.History.FindMyOrders((error, data) => {
-        //         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(orderId));
-        //         console.log(error, SDK.Encryption.encryptDecrypt(data))
-        //     });//orders = SDK.History.FindMyOrders((orders) => //orders.orderId === orderId);
-        //     //console.log(orders));
-        //     SDK.History.orderProduct(orderId, orders.productName, order.productPrice, (err, data, cb) => {
-        //         console.log(data, cb)
-        //         if (err && err.xhr.status === 401) {
-        //             $(".margin-bottom").addClass("Error")
-        //         }
-        //
-        //
-        //
-        //     });
-        //
-        //
-        // });
 
 
         $(".order-button").click(function () {

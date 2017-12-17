@@ -2,14 +2,7 @@ const SDK = {
     serverURL: "http://localhost:8080/api/",
     request: (options, cb) => {
 
-        // let headers = {};
-        // if (options.headers) {
-        //     Object.keys(options.headers).forEach((h) => {
-        //         headers[h] = (typeof options.headers[h] === 'object') ? JSON.stringify(options.headers[h]) : options.headers[h];
-        //     });
-        //
-        //
-        // }
+
 
         let token = SDK.Storage.load("token");
 
@@ -60,7 +53,7 @@ const SDK = {
 
     History: {
         FindMyOrders: (cb) => {
-            console.log(1, SDK.Storage.load("token"));
+
             SDK.request({
                 method: "GET",
                 url: "history",
@@ -71,26 +64,7 @@ const SDK = {
 
 
         },
-        //     orderProduct: (orderId, id, productName, productPrice, cb) => {
-        //
-        //         SDK.request({
-        //             data: {
-        //                 orderId: orderId,
-        //                 id: id,
-        //                 productName: productName,
-        //                 productPrice: productPrice
-        //             },
-        //
-        //             method: "POST",
-        //             url: "users/orders/16",
-        //
-        //             headers: {authorization: SDK.Storage.load("token")}
-        //         }, (err, data) => {
-        //
-        //             cb(null, data);
-        //         });
-        //     },
-        // },
+
 
 
         orderProduct: (id, data, cb) => {
@@ -102,36 +76,11 @@ const SDK = {
             }, cb);
         }
     },
-    // Author: {
-    //     findAll: (cb) => {
-    //         SDK.request({method: "GET", url: "/authors"}, cb);
-    //     }
-    // },
-    // Order: {
-    //     orderProduct: (orderId, id, productName, productPrice, cb) => {
-    //         SDK.request({
-    //             method: "POST",
-    //             url: "users/orders",
-    //
-    //             headers: {authorization: SDK.Storage.load("token")}
-    //         }, cb);
-    //     },
-    //
-    //      findMyOrders: (cb) => {
-    //          SDK.request({
-    //              method: "GET",
-    //              url: "orders/" + SDK.User.current(),
-    //              headers: {
-    //                  authorization: SDK.Storage.load("tokenId")
-    //              }
-    //          }, cb);
-    //      }
-    // },
+
+
 
     User: {
-        findAll: (cb) => {
-            SDK.request({method: "GET", url: "/users/"}, cb);
-        },
+
         current: () => {
             return SDK.Storage.load("token");
         },
@@ -159,11 +108,7 @@ const SDK = {
                 //On login-error
                 if (err) return cb(err);
 
-                // SDK.Storage.persist("token", data.id);
-                // SDK.Storage.persist("id", data.User);
-                // SDK.Storage.persist("username", data.username);
-                //
-                // cb(null, data);
+
                 SDK.Storage.persist("token", SDK.Encryption.encryptDecrypt(data));
 
                 cb(null, data);
@@ -196,7 +141,7 @@ const SDK = {
 
     Encryption: {
         encryptDecrypt(input) {
-            let key = ['L', 'O', 'L']; //Can be any chars, and any size array
+            let key = ['L', 'O', 'L']; //encryption code
             let output = [];
 
             for (let i = 0; i < input.length; i++) {
