@@ -60,11 +60,12 @@ const SDK = {
 
     History: {
         FindMyOrders: (cb) => {
+            console.log(1, SDK.Storage.load("token"));
             SDK.request({
                 method: "GET",
                 url: "history",
                 headers: {
-                    authorization: SDK.Storage.load("token")
+                    Authorization: SDK.Storage.load("token")
                 }
             }, cb)
 
@@ -95,9 +96,9 @@ const SDK = {
         orderProduct: (id, data, cb) => {
             SDK.request({
                 method: "POST",
-                url: "users/orders/" + 45,
+                url: "users/order/" + id,
                 data: data,
-                headers: {authorization: SDK.Storage.load("token")}
+                headers: {Authorization: SDK.Storage.load("token")}
             }, cb);
         }
     },
