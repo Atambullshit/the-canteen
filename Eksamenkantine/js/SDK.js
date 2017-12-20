@@ -1,8 +1,9 @@
 const SDK = {
     serverURL: "http://localhost:8080/api/",
     request: (options, cb) => {
-
-
+        console.log('test');
+        console.log(options.data);
+        console.log(JSON.stringify(options.data));
 
         let token = SDK.Storage.load("token");
 
@@ -12,12 +13,14 @@ const SDK = {
             headers: {'Authorization': token}, //headers
             //contentType: "application/json;charset=utf-8",
             accept: "application/json",
-            dataType: "json",
+            dataType: options.dataType || "json",
             data: JSON.stringify(options.data),
             success: (data, status, xhr) => {
+                console.log('success!');
                 cb(null, data, status, xhr);
             },
             error: (xhr, status, errorThrown) => {
+                console.log('error!');
                 cb({xhr: xhr, status: status, error: errorThrown});
             }
         });
@@ -68,10 +71,13 @@ const SDK = {
 
 
         orderProduct: (id, data, cb) => {
+            console.log(1, id, data);
             SDK.request({
                 method: "POST",
                 url: "users/order/" + id,
                 data: data,
+                //dataType: 'text',
+
                 headers: {Authorization: SDK.Storage.load("token")}
             }, cb);
         }

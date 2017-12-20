@@ -21,7 +21,7 @@ $(document).ready(() => {
                 </tr>
                 `
             )
-        })
+        });
 
 
 
@@ -39,10 +39,13 @@ $(document).ready(() => {
                     if (order.id === orderId) {
                         currentOrder = order;
                     }
-                })
-                //console.log('tester', currentOrder);
+                });
+                console.log('tester', currentOrder);
+                console.log(currentOrder.id);
+                console.log(orderId);
+
                 SDK.History.orderProduct(currentOrder.id, orderId, (err, data) => {
-                    console.log(err, data);
+                    console.log(data);
                 })
             });
 
