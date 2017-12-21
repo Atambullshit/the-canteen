@@ -1,4 +1,9 @@
+//Dette Javascript dokument tager udgangspunkt i Jesper Bruun Hansens kode på Github:
+// https://github.com/Distribuerede-Systemer-2017/javascript-client
+
 const SDK = {
+
+    //serverns adresse
     serverURL: "http://localhost:8080/api/",
     request: (options, cb) => {
         console.log('test');
@@ -7,11 +12,12 @@ const SDK = {
 
         let token = SDK.Storage.load("token");
 
+        //Parametre for ajax kald til serveren
+
         $.ajax({
             url: SDK.serverURL + options.url,
             method: options.method,
-            headers: {'Authorization': token}, //headers
-            //contentType: "application/json;charset=utf-8",
+            headers: {'Authorization': token},
             accept: "application/json",
             dataType: options.dataType || "json",
             data: JSON.stringify(options.data),
@@ -25,6 +31,7 @@ const SDK = {
             }
         });
 
+        //finder alle madvarer
     },
     Food: {
         getAllFoods: (cb) => {
@@ -42,6 +49,8 @@ const SDK = {
         }
     },
 
+    //Finder alle drikkevarer
+
     Drink: {
         getAllDrinks: (cb) => {
             SDK.request({
@@ -53,6 +62,8 @@ const SDK = {
             }, cb);
         }
     },
+
+    //finder ordre
 
     History: {
         FindMyOrders: (cb) => {
@@ -68,7 +79,7 @@ const SDK = {
 
         },
 
-
+    //opretter en ordre, med
 
         orderProduct: (id, data, cb) => {
             console.log(1, id, data);
@@ -76,7 +87,7 @@ const SDK = {
                 method: "POST",
                 url: "users/order/" + id,
                 data: data,
-                //dataType: 'text',
+
 
                 headers: {Authorization: SDK.Storage.load("token")}
             }, cb);
@@ -84,19 +95,19 @@ const SDK = {
     },
 
 
-
+    //brugeren bliver tildelt token
     User: {
 
         current: () => {
             return SDK.Storage.load("token");
-        },
+        }, //brugeren får fjernet sin token ved logud
         logOut: () => {
             SDK.Storage.remove("token");
             SDK.Storage.remove("id");
             SDK.Storage.remove("username");
             window.location.href = "Login.html";
 
-
+        //login funktion
         },
         login: (username, password, cb) => {
 
@@ -122,7 +133,7 @@ const SDK = {
 
             });
 
-
+        //funktion til at oprette bruger
         },
         createUser: (username, password, cb) => {
             SDK.request({
@@ -144,7 +155,7 @@ const SDK = {
             );
         },
     },
-
+    //krypterings metoden der er brugt
     Encryption: {
         encryptDecrypt(input) {
             let key = ['L', 'O', 'L']; //encryption code
@@ -158,7 +169,7 @@ const SDK = {
         }
 
     },
-
+    //navigationsbaren på hver side
     loadNav: (cb) => {
         $("#nav-container").load("nav.html", () => {
             const currentUser = SDK.User.current();
@@ -176,7 +187,7 @@ const SDK = {
             cb && cb();
         });
     },
-
+    //storage metoden der gør at en token bliver persistet
     Storage: {
         prefix: "canteenSDK",
         persist:

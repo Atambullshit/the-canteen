@@ -1,7 +1,7 @@
 
 $(document).ready(() => {
 
-    //SDK.User.loadNav();
+    //funktion der burde hente hver enkelt ordre ned. Den virker dog ikke optimalt
     const $orderList = $("#order-tbody");
 
 

@@ -1,29 +1,30 @@
 $(document).ready(() => {
 
-    //SDK.User.loadNav();
+    //funktion der henter alle madvarer fra databasen
     const foodList = $("#food-list");
 
 
     SDK.Food.getAllFoods((err, data) => {
-        console.log('getAllFoods from food.js');
+
         console.log(err, data);
         let foods = JSON.parse(SDK.Encryption.encryptDecrypt(data));
         console.log(foods);
-        //console.log(1, food);
+
         foods.forEach(food => {
             console.log(1, food);
+            //tabel
             foodList.append(`
                 <tr>
                     <td>${food.id}</td>
                     <td>${food.productName}</td>
                     <td>${food.productPrice}</td>
-                    <td><button class="btn btn-success order-button" data-order-id="${food.id}">Order</button></td>
+                    <td><button class="btn btn-success order-button" data-order-id="${food.id}">Order</button></td>//ordre knappen
                 </tr>
                 `
             )
         });
 
-
+        //funktion af ordre knap
 
         $(".order-button").click(function () {
             const orderId = $(this).data("order-id");
@@ -33,9 +34,9 @@ $(document).ready(() => {
             SDK.History.FindMyOrders((error, data) => {
                 const orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
                 let currentOrder = null;
-                //console.log(2, orders);
+
                 orders.forEach((order) => {
-                    //console.log(3, order);
+
                     if (order.id === orderId) {
                         currentOrder = order;
                     }

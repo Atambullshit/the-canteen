@@ -1,6 +1,7 @@
 $(document).ready(() => {
-
-    //SDK.User.loadNav();
+    //dette funktion tager udgangs punkt ii Jesper Bruun Hansens kode på Github:
+    // https://github.com/Distribuerede-Systemer-2017/javascript-client
+    //funktionen der logger en bruger ind
 
     $("#login-button").click(() => {
 

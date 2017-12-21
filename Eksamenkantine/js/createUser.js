@@ -1,6 +1,7 @@
 $(document).ready(() => {
-
-    //SDK.User.loadNav();
+    //dennee funktion tager udgangs punkt ii Jesper Bruun Hansens kode på Github:
+    // https://github.com/Distribuerede-Systemer-2017/javascript-client
+    //funktionen der opretter en bruger
 
     $("#submitButton").click(() => {
 
