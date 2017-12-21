@@ -6,9 +6,7 @@ const SDK = {
     //serverns adresse
     serverURL: "http://localhost:8080/api/",
     request: (options, cb) => {
-        console.log('test');
-        console.log(options.data);
-        console.log(JSON.stringify(options.data));
+
 
         let token = SDK.Storage.load("token");
 
@@ -35,13 +33,13 @@ const SDK = {
     },
     Food: {
         getAllFoods: (cb) => {
-            console.log('before request')
+
             SDK.request({
                 method: "GET",
                 url: "food",
             }, (err, food) => {
                 if (err) return cb(err);
-                console.log(2, food);
+
                 cb(null, food)
 
 
@@ -82,7 +80,7 @@ const SDK = {
     //opretter en ordre, med
 
         orderProduct: (id, data, cb) => {
-            console.log(1, id, data);
+
             SDK.request({
                 method: "POST",
                 url: "users/order/" + id,

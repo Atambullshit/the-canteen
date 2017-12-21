@@ -12,7 +12,7 @@ $(document).ready(() => {
         }
         //console.log(SDK.Encryption.encryptDecrypt(data));
         let orders = JSON.parse(SDK.Encryption.encryptDecrypt(data));
-        console.log(data);
+
         console.log(orders);
         orders.forEach((order) => {
 

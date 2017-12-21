@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be4f2ed9-9a5e-4eaf-8c74-4838ecc42bea" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Eksamenkantine/js/Index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Eksamenkantine/CSS/Main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/Drinks.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/Drinks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/Food.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/Food.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/Login.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/Login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/Style/Index.css" afterPath="$PROJECT_DIR$/Eksamenkantine/Style/Index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css" afterPath="$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/index.html" afterPath="$PROJECT_DIR$/Eksamenkantine/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/SDK.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/SDK.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Eksamenkantine/js/createUser.js" afterPath="$PROJECT_DIR$/Eksamenkantine/js/createUser.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,14 +25,14 @@
       <file leaf-file-name="Food.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Food.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="296">
+              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding>
-                <marker date="1513861017000" expanded="true" signature="429:455" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="429:495" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="429:544" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="429:721" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="767:768" ph="..." />
+                <marker date="1513861773000" expanded="true" signature="429:455" ph="..." />
+                <marker date="1513861773000" expanded="true" signature="429:495" ph="..." />
+                <marker date="1513861773000" expanded="true" signature="429:544" ph="..." />
+                <marker date="1513861773000" expanded="true" signature="429:721" ph="..." />
+                <marker date="1513861773000" expanded="true" signature="767:768" ph="..." />
               </folding>
             </state>
           </provider>
@@ -42,8 +41,8 @@
       <file leaf-file-name="Drinks.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Drinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="311">
+              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
               <folding>
                 <marker date="1513861017000" expanded="true" signature="436:738" ph="..." />
               </folding>
@@ -51,35 +50,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createUser.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/createUser.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Eksamenkantine/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="60">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Orders.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eksamenkantine/Orders.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyOrders.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyOrders.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-564">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
-                <marker date="1513861017000" expanded="true" signature="870:1119" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="891:1119" ph="..." />
-                <marker date="1513861017000" expanded="true" signature="1504:1766" ph="..." />
+                <marker date="1513862496000" expanded="true" signature="852:1101" ph="..." />
+                <marker date="1513862496000" expanded="true" signature="873:1101" ph="..." />
+                <marker date="1513862496000" expanded="true" signature="1486:1748" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Eksamenkantine/index">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Drinks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Eksamenkantine/Drinks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createUser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Eksamenkantine/createUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SDK.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/SDK.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,28 +136,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SDK.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/SDK.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="67" lean-forward="true" selection-start-line="0" selection-start-column="47" selection-end-line="1" selection-end-column="67" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,6 +149,7 @@
     <findStrings>
       <find>btn</find>
       <find>succes</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,20 +161,20 @@
         <option value="$PROJECT_DIR$/Eksamenkantine/Food.html" />
         <option value="$PROJECT_DIR$/Eksamenkantine/Drinks.html" />
         <option value="$PROJECT_DIR$/Eksamenkantine/js/Index.js" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/index.html" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/Style/Index.css" />
         <option value="$PROJECT_DIR$/Eksamenkantine/History.html" />
         <option value="$PROJECT_DIR$/Eksamenkantine/nav.html" />
         <option value="$PROJECT_DIR$/Eksamenkantine/js/History.js" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css" />
         <option value="$PROJECT_DIR$/Eksamenkantine/lib/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/Eksamenkantine/Orders.html" />
         <option value="$PROJECT_DIR$/Eksamenkantine/js/Drinks.js" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/js/Food.js" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js" />
-        <option value="$PROJECT_DIR$/Eksamenkantine/js/SDK.js" />
         <option value="$PROJECT_DIR$/Eksamenkantine/js/Login.js" />
         <option value="$PROJECT_DIR$/Eksamenkantine/js/createUser.js" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/Style/Index.css" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/index.html" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/js/Food.js" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/js/SDK.js" />
+        <option value="$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js" />
       </list>
     </option>
   </component>
@@ -277,12 +287,12 @@
       <updated>1511945693436</updated>
       <workItem from="1511945695209" duration="14492000" />
       <workItem from="1512319497541" duration="20955000" />
-      <workItem from="1512479159211" duration="22745000" />
+      <workItem from="1512479159211" duration="23651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58192000" />
+    <option name="totallyTimeSpent" value="59098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="23" width="1260" height="723" extended-state="0" />
@@ -291,10 +301,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16587302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4439324" sideWeight="0.5031746" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4439324" sideWeight="0.4968254" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4439324" sideWeight="0.4968254" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -302,7 +313,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -322,11 +332,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1513861017000" expanded="true" signature="429:455" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:495" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:544" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:721" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="767:768" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:455" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:495" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:544" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:721" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="767:768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -352,9 +362,9 @@
         <state relative-caret-position="210">
           <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
-            <marker date="1513861017000" expanded="true" signature="870:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="891:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="1504:1766" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="852:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="873:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="1486:1748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -414,11 +424,11 @@
         <state relative-caret-position="285">
           <caret line="19" column="50" lean-forward="false" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <marker date="1513861017000" expanded="true" signature="429:455" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:495" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:544" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:721" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="767:768" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:455" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:495" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:544" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:721" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="767:768" ph="..." />
           </folding>
         </state>
       </provider>
@@ -428,9 +438,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1513861017000" expanded="true" signature="870:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="891:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="1504:1766" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="852:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="873:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="1486:1748" ph="..." />
           </folding>
         </state>
       </provider>
@@ -503,6 +513,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KantineLOL 4/src/main/java/server/endpoints/DrinkEndpoint.java" />
     <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Products.js" />
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/lib/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47689">
+          <caret line="3181" column="28" lean-forward="true" selection-start-line="3181" selection-start-column="28" selection-end-line="3181" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/createUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/CSS/Main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/Index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Eksamenkantine/logout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -511,10 +601,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/nav.html">
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="307">
+          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/index">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Food.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -535,74 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/Index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Style/OrderButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/lib/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47689">
-          <caret line="3181" column="28" lean-forward="true" selection-start-line="3181" selection-start-column="28" selection-end-line="3181" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Food.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/Orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Drinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="311">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
           <folding>
             <marker date="1513861017000" expanded="true" signature="436:738" ph="..." />
           </folding>
@@ -611,61 +661,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Food.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="296">
+          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
-            <marker date="1513861017000" expanded="true" signature="429:455" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:495" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:544" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="429:721" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="767:768" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <marker date="1513861017000" expanded="true" signature="870:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="891:1119" ph="..." />
-            <marker date="1513861017000" expanded="true" signature="1504:1766" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:455" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:495" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:544" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="429:721" ph="..." />
+            <marker date="1513861773000" expanded="true" signature="767:768" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/SDK.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="67" lean-forward="true" selection-start-line="0" selection-start-column="47" selection-end-line="1" selection-end-column="67" />
+        <state relative-caret-position="121">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/Login.js">
+    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/MyOrders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="2" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Eksamenkantine/js/createUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <marker date="1513862496000" expanded="true" signature="852:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="873:1101" ph="..." />
+            <marker date="1513862496000" expanded="true" signature="1486:1748" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
